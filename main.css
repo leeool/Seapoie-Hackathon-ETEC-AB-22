@@ -1,0 +1,60 @@
+.main{
+  margin-top: 150px;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 200px;
+}
+
+.main-text{
+  text-align: center;
+  margin-bottom: 150px;
+  color: #222;
+}
+
+.main-title{
+  font-size: 10rem;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.main-title::before{
+  content: "";
+  position: absolute;
+  background: url(img/wave.png) no-repeat;
+  width: 170px;
+  height: 50px;
+  background-size: 100%;
+  bottom: 15px;
+  left: -20px;
+}
+
+.main-paragraph{
+  margin-top: 12px;
+  font-size: 2.2rem;
+}
+
+.map{
+  grid-column: 2;
+}
+
+
+.locals-title{
+  font-size: 6.4rem;
+  grid-row: 1;
+  text-align: center;
+  color: #222;
+  font-weight: 600;
+}
+
+.locals{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  gap: 60px ;
+  align-items: center;
+}
+
+.emphazis{
+  color: #28476C;
+}

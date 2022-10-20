@@ -1,0 +1,26 @@
+:root{
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  /* border: 0; */
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: #eee;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+a{
+  color: inherit;
+}
