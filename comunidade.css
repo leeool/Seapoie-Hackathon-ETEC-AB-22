@@ -12,6 +12,7 @@
   max-width: 20ch;
   text-align: center;
   font-weight: 500;
+  color: #222;
 }
 
 .forum img{
@@ -37,6 +38,7 @@
   max-width: 40ch;
   font-weight: 500;
   justify-self: center;
+  color: #222;
 }
 
 .forum-button{

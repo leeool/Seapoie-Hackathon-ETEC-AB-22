@@ -1,0 +1,22 @@
+.main-form{
+    margin-top: 200px;
+
+}
+
+form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    gap: 18px;
+}
+
+label{
+    font-size: 1.8rem;
+}
+
+.footer{
+    margin-top: 1000px;
+}
