@@ -35,9 +35,8 @@
 }
 
 .map{
-  grid-column: 2;
+  /* grid-column: 2; */
 }
-
 
 .locals-title{
   font-size: 6.4rem;
@@ -57,4 +56,44 @@
 
 .emphazis{
   color: #28476C;
+}
+
+@media (width <= 1000px){
+  .locals{
+    grid-template-columns: 1fr;
+  }
+
+  .map{
+    justify-self: center;
+    width: 300px;
+    height: 400px;
+  }
+
+  .locals-title{
+    font-size: 4.8rem;
+  }
+}
+
+@media (width <= 500px){
+  .main-title{
+    font-size: 6.6rem;
+  }
+
+  .main-text{
+    margin-bottom: 80px;
+  }
+
+  .main-paragraph{
+    font-size: 1.6rem;
+  }
+
+
+  .locals-title{
+    font-size: 3.6rem;
+  }
+
+  .map{
+    width: 270px;
+    height: 300px;
+  }
 }

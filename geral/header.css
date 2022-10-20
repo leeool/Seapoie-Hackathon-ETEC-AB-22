@@ -19,7 +19,7 @@
 .nav-items{
   display: flex;
   gap: 40px;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 300;
 }
 
@@ -48,4 +48,15 @@
   font-weight: bolder;
   font-weight: 500;
   cursor: pointer;
+}
+
+
+
+@media (width <= 800px){
+  .header-items{
+    flex-direction: column;
+  }
+  .nav-items{
+    font-size: 1.8rem;
+  }
 }

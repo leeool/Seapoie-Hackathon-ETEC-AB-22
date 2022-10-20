@@ -67,3 +67,22 @@
 img{
   width: 100%;
 }
+
+@media(width <= 1000px){
+  .footer-title{
+    justify-content: center;
+    margin-bottom: 32PX;
+  }
+  .footer-items{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-medias-items{
+    margin-bottom: 32px;
+  }
+
+  .social-medias-items::before{
+    max-width: 100%;
+  }
+}
