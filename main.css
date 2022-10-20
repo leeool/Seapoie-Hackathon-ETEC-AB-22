@@ -7,7 +7,7 @@
 
 .main-text{
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   color: #222;
 }
 
@@ -38,6 +38,7 @@
   /* grid-column: 2; */
 }
 
+
 .locals-title{
   font-size: 6.4rem;
   grid-row: 1;
@@ -58,6 +59,66 @@
   color: #28476C;
 }
 
+/* Card */
+
+.card-vantagem{
+  font-size: 3.8rem;
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 600;
+  color: #222;
+}
+
+.card-item p {
+  color: #222;
+  font-size: 1.8rem;
+}
+
+.card-content{
+  color: white;
+  
+}
+
+.card-content{
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  margin-bottom: 100px;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card-content ul {
+  background-color: #28476C;
+  padding: 32px 44px;
+  font-size: 1.6rem;
+  max-width: 300px;
+  border-radius: 4px;
+}
+
+.card-content li {
+  line-height: 1.5;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.card-content li:not(:nth-child(4)){
+  margin-bottom: 15px;
+}
+
+.card-content li::before{
+  content: "";
+  display: inline-block;
+  background: url(img/feito.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+  position: absolute;
+  left: -30px;
+}
+
 @media (width <= 1000px){
   .locals{
     grid-template-columns: 1fr;
@@ -65,14 +126,23 @@
 
   .map{
     justify-self: center;
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
   }
 
   .locals-title{
     font-size: 4.8rem;
   }
+
 }
+
+@media (width <= 600px){
+  .map{
+    width: 400px;
+    height: 400px;
+  }
+}
+
 
 @media (width <= 500px){
   .main-title{
@@ -92,8 +162,12 @@
     font-size: 3.6rem;
   }
 
-  .map{
-    width: 270px;
-    height: 300px;
+
+  @media (width <= 400px){
+    .map{
+      width: 300px;
+      height: 300px;
+    }
   }
+
 }

@@ -5,16 +5,12 @@
 }
 
 .footer-items{
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  justify-content: space-between;
-  margin: 0 auto;
-  justify-self: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-title{
-  font-size: 48px;
-  font-weight: bolder;
+  font-size: 4.8rem;
   font-weight: 500;
   cursor: pointer;
   display: inline-block;
@@ -22,10 +18,35 @@
   justify-content: start;
 }
 
+.footer-lumniz{
+  grid-column: 1;
+  font-size: 2rem;
+  font-weight: 500;
+  position: relative;
+  color: #eee;
+}
+
+.footer-lumniz::after{
+  content: "";
+  background: url(../img/lumniz-icon.png) no-repeat;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  background-size: 50%;
+  left: 90px;
+  bottom: -50px;
+  display: none;
+}
+
 .footer-item{
   font-size: 2.6rem;
   /* max-width: 300px; */
   justify-self: center;
+}
+
+.footer-item li{
+  color: #eee;
 }
 
 .footer-item h3{
@@ -44,7 +65,7 @@
   position: absolute;
   content: "";
   height: 2px;
-  width: 150%;
+  width: 100%;
   top: -16px;
   background-color: rgba(221, 221, 221, 0.377);
 }
@@ -71,8 +92,17 @@ img{
 @media(width <= 1000px){
   .footer-title{
     justify-content: center;
-    margin-bottom: 32PX;
   }
+
+  .footer-lumniz{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-lumniz::after{
+    display: none;
+  }
+
   .footer-items{
     display: flex;
     flex-direction: column;
