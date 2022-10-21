@@ -62,3 +62,9 @@
     font-size: 1.8rem;
   }
 }
+
+@media (width <= 450px){
+  .nav-items{
+    font-size: 1.5rem;
+  }
+}

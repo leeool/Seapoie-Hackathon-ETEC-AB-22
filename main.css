@@ -68,6 +68,8 @@
   margin-bottom: 100px;
 }
 
+
+
 .card-vantagem{
   font-size: 3.8rem;
   text-align: center;
@@ -157,6 +159,11 @@
     width: 400px;
     height: 400px;
   }
+  .card-bg::after{
+    content: "Arraste para o lado!";
+    color: white;
+    font-size: 1.2rem;
+  }
 }
 
 
@@ -196,6 +203,7 @@
     .map{
       width: 300px;
       height: 300px;
+      box-shadow: 5px 5px 0 #28476C;
     }
 
     .main-title{
