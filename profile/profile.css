@@ -14,7 +14,7 @@
 
 .profile-pic{
   position: absolute;
-  width: 210px;
+  max-width: 210px;
   border-radius: 50%;
   top: 350px;
   left: 35px;
@@ -36,6 +36,11 @@
   gap: 50px;
   margin-top: 130px;
   margin-bottom: 300px;
+}
+
+.profile-info div{
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .profile-about{
@@ -61,4 +66,47 @@
     justify-items: center;
   }
 }
+
+@media (width <= 800px){
+  .profile-name{
+    font-size: 3.2rem;
+  }
+}
+
+@media (width <= 600px){
+  .profile-info{
+    margin-top: 160px;
+  }
+
+  .profile-name{
+    font-size: 2.4rem;
+    left: 50%;
+    translate: -50%;
+    margin-top: 80px;
+    width: max-content;
+  }
+
+  .profile-pic{
+    width: 150px;
+    left: 50%;
+    translate: -50%;
+    top: 390px;
+  }
+
+  .profile-banner{
+    box-shadow: 0 130px 0 #28476C;
+  }
+}
+
+@media (width <= 400px){
+  .profile-about{
+    font-size: 1.4rem;
+  }
+
+  .profile-about h3{
+    font-size: 2rem;
+  }
+}
+
+
 
