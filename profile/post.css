@@ -28,10 +28,14 @@
   border-radius: 4px;
 }
 
-.post img{
+.post > img{
   display: flex;
   align-self: center;
   max-width: 500px;
+}
+
+.post-logo{
+  width: 90px;
 }
 
 .date{
