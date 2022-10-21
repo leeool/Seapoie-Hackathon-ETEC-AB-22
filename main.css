@@ -60,6 +60,17 @@
 }
 
 
+.slide{
+  margin-top: 150px;
+}
+
+.slide h2{
+  font-size: 5rem;
+  text-align: center;
+  column-rule-color: #222;
+  font-weight: 600;
+}
+
 /* Card */
 
 .card-bg{
@@ -136,6 +147,8 @@
   position: absolute;
   left: -30px;
 }
+
+
 
 @media (width <= 1000px){
   .locals{
