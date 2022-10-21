@@ -34,8 +34,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  margin-top: 130px;
+  /* margin-top: 130px; */
   margin-bottom: 300px;
+  max-width: 1200px;
+  margin: 130px auto;
 }
 
 .profile-info div{

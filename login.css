@@ -69,12 +69,13 @@ input::-webkit-inner-spin-button{
     appearance: none;
 }
 
-.form button{
+.form a{
     cursor: pointer;
     background-color: #28476C;
     display: block;
     margin-top: 24px;
     color: white;
+    text-align: center;
     border: 1px rgba(255, 255, 255, 0.295) solid;
     border-radius: 4px;
     padding: 16px;
@@ -82,7 +83,7 @@ input::-webkit-inner-spin-button{
     transition: .1s background;
 }
 
-.form button:hover{
+.form a:hover{
     background-color: #366196;
 }
 
