@@ -1,5 +1,5 @@
 .main-form{
-    padding-top: 200px;
+    padding-top: 170px;
     padding-bottom: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,8 +9,15 @@
     
 }
 
+.main-form h1{
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 4.4rem;
+    color: #222;
+    font-weight: 500;
+}
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     grid-column: 2;
@@ -38,12 +45,124 @@ form{
 }
 label{
     font-size: 1.8rem;
+    color: #222;
 }
 
-input{
+.form-input{
     border: 0;
     border-bottom: 1px #999 solid;
     border-radius: 0;
+    background-color: #eee;
+    width: 400px;
+    height: 30px;
+    font-size: 1.6rem;
+    padding: 8px;
+    border-radius: 0;
+    display: block;
+}
 
-    /* background-color: rgb(255, 254, 254); */
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+.form button{
+    cursor: pointer;
+    background-color: #28476C;
+    display: block;
+    margin-top: 24px;
+    color: white;
+    border: 1px rgba(255, 255, 255, 0.295) solid;
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 2.2rem;
+    transition: .1s background;
+}
+
+.form button:hover{
+    background-color: #366196;
+}
+
+@media (width <= 1000px){
+   .form-gif{
+    display: none;
+   } 
+
+   .bg{
+    display: none;
+   }
+
+   .main-form{
+    display: flex;
+    
+   }
+
+   .form{
+    background-color: #28476C;
+    padding: 32px;
+    border-radius: 4px;
+   }
+
+   .main-form label{
+    color: white;
+   }
+
+   .form-input{
+    background-color: #28476C;
+    color: white;
+    border-bottom: 1px rgba(255, 255, 255, 0.308) solid;
+   }
+
+   .form-input::placeholder{
+    color: rgba(255, 255, 255, 0.486);
+   }
+
+}
+
+@media (width <= 600px){
+    .form-input{
+        width: 90%;
+    }
+
+    .form{
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .form button{
+        display: flex;
+        width: 200px;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+@media (width <= 400px){
+    .form-input{
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    label{
+        font-size: 1.4rem;
+    }
+
+    .form button {
+        font-size: 1.4rem;
+        width: 140px;
+        height: 50px;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .main-form h1{
+        font-size: 3.2rem;
+    }
 }

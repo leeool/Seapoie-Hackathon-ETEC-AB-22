@@ -2,7 +2,7 @@
   background-color: #28476C;
   color: #eee;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   top: 0;
 }
@@ -13,7 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
+  gap: 20px;
 }
 
 .nav-items{
@@ -26,6 +27,7 @@
 .nav-items li{
   cursor: pointer;
   position: relative;
+  text-align: center;
 }
 
 .nav-items li::before{

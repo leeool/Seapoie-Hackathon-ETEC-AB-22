@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -21,7 +21,7 @@
         <ul class="nav-items">
           <li><a href="./comunidade.html">Comunidade</a></li>
           <li><a href=""><a href="./ONGs.html">ONGs</a></a></li>
-          <li><a href=""><a href="./login.html">Faça parte</a></a></li>
+          <li><a href=""><a href="./login.html">Cadastrar ONG</a></a></li>
         </ul>
       </nav>
     </div>
@@ -29,47 +29,50 @@
 
   <main class="ongs container">
     <h1>ONGs de Mongaguá</h1>
-  <div class="search">
-    <input type="text" placeholder="Procurar ONGs...">
-    <button class="search-button"><img src="img/lupa.png" alt=""></button>
-  </div>
-  <div class="ongs-content">
-    <div class="ongs-list">
-      <ul class="ongs-item">
-        <img src="img/user.png" alt="">
-        <div>
-          <li class="name">Nome da ONG</li>
-          <li class="localization">Localização</li>
-          <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-      </ul>
-      <ul class="ongs-item">
-        <img src="img/user.png" alt="">
-        <div>
-          <li class="name">Nome da ONG</li>
-          <li class="localization">Localização</li>
-          <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-      </ul>
-      <ul class="ongs-item">
-        <img src="img/user.png" alt="">
-        <div>
-          <li class="name">Nome da ONG</li>
-          <li class="localization">Localização</li>
-          <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-      </ul>
-      <ul class="ongs-item">
-        <img src="img/user.png" alt="">
-        <div>
-          <li class="name">Nome da ONG</li>
-          <li class="localization">Localização</li>
-          <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-      </ul>
+    <div class="search">
+      <button class="search-button"><img src="img/lupa.png" alt=""></button>
+      <input class="search-input" type="text" placeholder="Procurar ONGs...">
     </div>
-  </div>
-</main>
+    <div class="ongs-content">
+      <div class="ongs-list">
+        <ul class="ongs-item">
+          <a href=""><img src="img/ongs perfil/patinhas.png" alt=""></a>
+          <div>
+            <li class="name"><a href="">Patinhas Queridas</a></li>
+            <li class="localization">Rua do Ipiranga - Jussara</li>
+            <p class="about">Combatemos o abandono e os maus-tratos aos animais. Sensibilizamos para a adoção
+              responsável.</p>
+          </div>
+        </ul>
+        <ul class="ongs-item">
+          <img src="img/ongs perfil/Agasalho do Amor.png" alt="">
+          <div>
+            <li class="name">Agasalho do Amor</li>
+            <li class="localization">Avenida São João - Centro</li>
+            <p class="about">Transformamos vidas de moradores de rua por meio de doação de roupas e alimentos.</p>
+          </div>
+        </ul>
+        <ul class="ongs-item">
+          <img src="img/ongs perfil/esporte e amor.png" alt="">
+          <div>
+            <li class="name">Esporte e Amor</li>
+            <li class="localization">Rua Arlindo Nogueira - Itaóca</li>
+            <p class="about">Com a paixão pelo esporte na veia, queremos mudar a vida de todo jovem, criança ou adulto.
+            </p>
+          </div>
+        </ul>
+        <ul class="ongs-item">
+          <a href="./profile/profile.html"><img src="img/ongs perfil/caiçara.png" alt=""></a>
+          <div>
+            <li class="name"><a href="./profile/profile.html">Solidariedade Caiçara</a></li>
+            <li class="localization">Rua Cristiano Olsen - Centro</li>
+            <p class="about">O orgulho de ser caiçara deve ser respresentado. Fazemos doações de roupas e alimentos para
+              pessoas carentes do litoral.</p>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </main>
   <footer class="footer">
     <div class="footer-items container">
       <div class="logos">
@@ -93,7 +96,7 @@
   </footer>
 
 
-  <script src="app.js"></script>
+  <script src="./JS/ongs.js"></script>
 </body>
 
 </html>

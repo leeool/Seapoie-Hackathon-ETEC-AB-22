@@ -22,7 +22,7 @@
         <ul class="nav-items">
           <li><a href="./comunidade.html">Comunidade</a></li>
           <li><a href="./ONGs.html">ONGs</a></li>
-          <li><a href="./login.html">Faça parte</a></li>
+          <li><a href="./login.html">Cadastrar ONG</a></li>
         </ul>
       </nav>
     </div>
@@ -31,32 +31,36 @@
   <span class="bg"></span>
   <main class="main-bg">
     <div class="main-form container">
-      <form action="nome">
-        <label for="nome">
-          Nome da ONG
-          <input type="text" placeholder="Um nome bonito" id="nome">
-        </label>
-        <label for="email">
-          Email
-          <input type="email" placeholder="sua.ong@email.com" id="email">
-        </label>
-        <label for="CNPJ">
-          CNPJ
-          <input type="number" placeholder="XX. XXX. XXX/0001-XX" id="CNPJ">
-        </label>
-        <label for="celular">
-          Telefone Fixo ou Móvel
-          <input type="number" placeholder="+55 13 123456789" id="celular">
-        </label>
-        <label for="senha1">
-          Insira sua senha
-          <input type="password" id="senha1" placeholder="********">
-        </label>
-        <label for="senha2">
-          Insira novamente
-          <input type="password" id="senha2" placeholder="********">
-        </label>
-      </form>
+      <div>
+        <h1>Cadastre sua ONG</h1>
+        <form autocomplete="off" class="form" action="submit">
+          <label for="nome">
+            Nome da ONG
+            <input autocomplete="off" class="form-input" type="text" placeholder="Um nome bonito" id="nome">
+          </label>
+          <label for="email">
+            Email
+            <input autocomplete="off" class="form-input" type="email" placeholder="sua.ong@email.com" id="email">
+          </label>
+          <label for="CNPJ">
+            CNPJ
+            <input autocomplete="off" class="form-input" type="number" placeholder="XX. XXX. XXX/0001-XX" id="CNPJ">
+          </label>
+          <label for="celular">
+            Telefone Fixo ou Móvel
+            <input autocomplete="off" class="form-input" type="number" placeholder="+55 13 123456789" id="celular">
+          </label>
+          <label for="senha1">
+            Insira sua senha
+            <input autocomplete="off" class="form-input" type="password" id="senha1" placeholder="********">
+          </label>
+          <label for="senha2">
+            Insira novamente
+            <input autocomplete="off" class="form-input" type="password" id="senha2" placeholder="********">
+          </label>
+          <button id="submit">Confirmar</button>
+        </form>
+      </div>
       <div class="form-gif">
         <img src="img/apertar-as-maos.png" alt="Handshake" />
       </div>

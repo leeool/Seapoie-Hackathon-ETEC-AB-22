@@ -1,0 +1,76 @@
+.post-info{
+  color: #222;
+}
+
+.post-info h3{
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.post-info p{
+  font-size: 1.8rem;
+}
+
+.post-info span{
+  display: flex;
+  justify-content: end;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #fff;
+  padding: 32px 16px;
+  border-radius: 4px;
+}
+
+.post img{
+  display: flex;
+  align-self: center;
+  width: 500px;
+}
+
+.date{
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: space-between;
+}
+
+.date p{
+  cursor: pointer;
+}
+
+.date p:hover{
+  color: #777;
+}
+
+.likes{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.likes::before{
+  content: "";
+  background: url(../img/heart.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.likes:hover::before{
+  filter: brightness(1.5);
+}
+
+@media (width <= 1000px){
+
+
+  .post{
+    max-width: 500px;
+  }
+}

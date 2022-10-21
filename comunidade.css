@@ -52,7 +52,7 @@
   background-color: #28476C;
   color: white;
   border: 0;
-  transition: .1s background;
+  transition: .2s background;
 }
 
 .forum-button:hover{

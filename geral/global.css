@@ -6,3 +6,6 @@
 @import url(../comunidade.css);
 @import url(../ongs.css);
 @import url(../login.css);
+
+@import url(../profile/profile.css);
+@import url(../profile/post.css);
