@@ -1,5 +1,5 @@
 .main{
-  margin-top: 150px;
+  margin-top: 200px;
   align-items: center;
   gap: 60px;
   margin-bottom: 200px;
@@ -34,10 +34,6 @@
   font-size: 2.2rem;
 }
 
-.map{
-  /* grid-column: 2; */
-}
-
 
 .locals-title{
   font-size: 6.4rem;
@@ -55,24 +51,39 @@
   align-items: center;
 }
 
+.map{
+  box-shadow: 10px 10px 0 #28476C;
+}
+
 .emphazis{
   color: #28476C;
 }
 
 /* Card */
 
+.card-bg{
+  background-color: #28476C;
+  padding: 32px;
+  margin-bottom: 100px;
+}
+
 .card-vantagem{
   font-size: 3.8rem;
   text-align: center;
   margin-bottom: 32px;
   font-weight: 600;
-  color: #222;
+  color: white;
   font-weight: 500;
 }
 
+.card-item{
+  min-width: 300px;
+}
+
 .card-item p {
-  color: #222;
+  color: white;
   font-size: 1.8rem;
+  margin-bottom: 16px;
 }
 
 .card-content{
@@ -83,16 +94,18 @@
 .card-content{
   display: flex;
   justify-content: center;
-  justify-self: center;
-  margin-bottom: 100px;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 25px;
-  flex-wrap: wrap;
+  gap: 55px;
+  overflow-x: auto;
+}
+
+@media (width <= 800px){
+  .card-content{
+    justify-content: start;
+  }
 }
 
 .card-content ul {
-  background-color: #28476C;
+  background-color: #222;
   padding: 32px 44px;
   font-size: 1.6rem;
   max-width: 300px;
@@ -147,7 +160,13 @@
 
 @media (width <= 500px){
   .main-title{
-    font-size: 6.6rem;
+    font-size: 7.6rem;
+  }
+
+  .main-title::before{
+    background-size: 80%;
+    bottom: 0px;
+    left: -10px;
   }
 
   .main-text{
@@ -158,6 +177,13 @@
     font-size: 1.6rem;
   }
 
+  .card-vantagem{
+    font-size: 3.2rem;
+  }
+
+  .locals{
+    padding: 10px;
+  }
 
   .locals-title{
     font-size: 3.6rem;
@@ -168,6 +194,20 @@
     .map{
       width: 300px;
       height: 300px;
+    }
+
+    .main-title{
+      font-size: 6.2rem;
+    }
+
+    .main-title::before{
+      background-size: 65%;
+      bottom: -5px;
+      left: -5px;
+    }
+
+    .card-vantagem{
+      font-size: 2.8rem;
     }
   }
 

@@ -116,3 +116,20 @@ img{
     max-width: 100%;
   }
 }
+
+@media (width <= 800px){
+  .footer-item li{
+    font-size: 1.8rem;
+  }
+
+  .footer-lumniz{
+    margin-bottom: 32px;
+  }
+
+}
+
+@media (width <= 500px){
+  .footer{
+    padding: 10px 0;
+  }
+}

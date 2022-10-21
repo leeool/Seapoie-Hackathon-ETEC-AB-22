@@ -15,58 +15,78 @@
 
 <body>
 
-    <header class="header">
-        <div class="header-items container">
-          <h1 class="header-title"><a href="./">Seapoie</a></h1>
-          <nav>
-            <ul class="nav-items">
-              <li><a href="./comunidade.html">Comunidade</a></li>
-              <li><a href="">ONGs</a></li>
-              <li><a href=""><a href="./login.html">Faça parte</a></a></li>
-            </ul>
-          </nav>
+  <header class="header">
+    <div class="header-items container">
+      <h1 class="header-title"><a href="./">Seapoie</a></h1>
+      <nav>
+        <ul class="nav-items">
+          <li><a href="./comunidade.html">Comunidade</a></li>
+          <li><a href="./ONGs.html">ONGs</a></li>
+          <li><a href="./login.html">Faça parte</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <span class="bg"></span>
+  <main class="main-bg">
+    <div class="main-form container">
+      <form action="nome">
+        <label for="nome">
+          Nome da ONG
+          <input type="text" placeholder="Um nome bonito" id="nome">
+        </label>
+        <label for="email">
+          Email
+          <input type="email" placeholder="sua.ong@email.com" id="email">
+        </label>
+        <label for="CNPJ">
+          CNPJ
+          <input type="number" placeholder="XX. XXX. XXX/0001-XX" id="CNPJ">
+        </label>
+        <label for="celular">
+          Telefone Fixo ou Móvel
+          <input type="number" placeholder="+55 13 123456789" id="celular">
+        </label>
+        <label for="senha1">
+          Insira sua senha
+          <input type="password" id="senha1" placeholder="********">
+        </label>
+        <label for="senha2">
+          Insira novamente
+          <input type="password" id="senha2" placeholder="********">
+        </label>
+      </form>
+      <div class="form-gif">
+        <img src="img/apertar-as-maos.png" alt="Handshake" />
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-items container">
+      <div class="logos">
+        <h3 class="footer-title"><a href="./">Seapoie</a></h3>
+        <h3 class="footer-lumniz">Por Lumniz</h3>
+      </div>
+      <div class="footer-item">
+        <h3>Contato</h3>
+        <ul class="item-info">
+          <li>se.apoie.contact@gmail.com</li>
+          <li>+55 13 996609278</li>
+        </ul>
+        <div class="social-medias">
+          <ul class="social-medias-items">
+            <li><a href="https://instagram.com/seapoie_"><img src="img/instagram.png" alt=""></a></li>
+          </ul>
         </div>
-      </header>
+      </div>
 
-      <main class="main-form">
-        <form action="">
-          <input type="text" placeholder="Um nome bonito">
-          <input type="email" placeholder="sua.ong@gmail.com">
-          <input type="number" placeholder="CNPJ">
-          <input type="number" placeholder="+55 13 123456789">
+    </div>
+  </footer>
 
-          
-          <label for="senha1">Insira sua senha</label>
-          <input type="password" id="senha1">
-          <label for="senha2">Insira novamente</label>
-          <input type="password" id="senha2">
-        </form>
-      </main>
 
-    <footer class="footer">
-        <div class="footer-items container">
-          <div class="logos">
-            <h3 class="footer-title"><a href="./">Seapoie</a></h3>
-            <h3 class="footer-lumniz">Por Lumniz</h3>
-          </div>
-          <div class="footer-item">
-            <h3>Contato</h3>
-            <ul class="item-info">
-              <li>se.apoie.contact@gmail.com</li>
-              <li>+55 13 996609278</li>
-            </ul>
-            <div class="social-medias">
-              <ul class="social-medias-items">
-                <li><a href="https://instagram.com/seapoie_"><img src="img/instagram.png" alt=""></a></li>
-              </ul>
-            </div>
-          </div>
-    
-        </div>
-      </footer>
-    
-    
-      <script src="app.js"></script>
-    </body>
-    
-    </html>
+  <script src="app.js"></script>
+</body>
+
+</html>
